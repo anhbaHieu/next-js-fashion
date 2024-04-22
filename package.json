@@ -6,21 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test-sonar": "react-scripts test --watchAll=false --coverage --testResultsProcessor jest-sonar-reporter",
+    "sonar": "node sonarqube-scanner.js"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.3.5",
+    "@reduxjs/toolkit": "^2.2.3",
+    "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "react-toastify": "^10.0.5",
+    "sonarqube-scanner": "^3.4.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.2"
+    "typescript": "^5"
   }
 }
